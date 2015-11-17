@@ -20,24 +20,24 @@ URL 必须是绝对地址，URI 可以是相对地址，如../icons/logo.gif
 2. 在做数据查询时，建议用Get方式；而在做数据添加、修改或删除时，建议用Post方式；
 
 ###（三）URL 语法
-1. 协议名
-http://
-2. 主机与端口号
-www.baidu.com:8080 无端口号默认位80
-3. 用户名与密码
-多用于 ftp
-4. 路径
-http://www.jobs-hardware.com:80/seasonal/index.html
-seasonal/index.html就是路径
-5. 参数
-http://www.jobs-hardware.com:80/seasonal:type=1/index.html
-:type=1就是参数，为服务器提供所需的参数
-6. 查询字符串
-http://www.jobs-hardware.com:80/seasonal/index.html?item=1
+1. 协议名  
+   http://
+2. 主机与端口号  
+   www.baidu.com:8080 无端口号默认位80
+3. 用户名与密码  
+   多用于 ftp
+4. 路径  
+   http://www.jobs-hardware.com:80/seasonal/index.html  
+   seasonal/index.html就是路径
+5. 参数  
+   http://www.jobs-hardware.com:80/seasonal:type=1/index.html  
+   :type=1就是参数，为服务器提供所需的参数
+6. 查询字符串  
+  http://www.jobs-hardware.com:80/seasonal/index.html?item=1
 ?item=1就是查询条件
-7. 片段
-http://www.jobs-hardware.com:80/seasonal/index.html&type=1#computer
-\#computer就是片段，片段只给前端定位使用
+7. 片段  
+  http://www.jobs-hardware.com:80/seasonal/index.html&type=1#computer  
+  \#computer就是片段，片段只给前端定位使用
 
 URL 字符集是通过转义序列，用有限的 ASCII 字符集对任意字符值或数据进行编码，实现可移植性和完整性。
 
