@@ -10,24 +10,25 @@ web 前端：浏览器输入url回车，发送 request 获取到该 url 对应re
 图中使用[charles 抓包工具](http://www.infoq.com/cn/articles/network-packet-analysis-tool-charles)。
 android、ios 等app前端：通常用 get 或 post 发送 request 请求，server 处理后返回response 带 xml 或 json 格式数据，app 前端进行解析。
 ####（3）代理服务器
-数据请求有可能经过代理服务器，才进入server。代理服务器相当于中介，既是 client 又是 server。 
-代理服务器的作用：  
-1. 翻墙，越过国内防火墙，访问一些被屏蔽的网站，主要原因是国内防火墙没有屏蔽这个代理服务器，而这个代理服务器又可以访问被屏蔽的网站。
-2. 缓存，对部分数据可以进行缓存，减少 server 负担，提升访问速度。
-3. 匿名访问，代理服务器可以代发请求而不保存原始发送点数据，较难查到请求方。
-4. 进行数据分析，比如使用 Charles 进行请求数据抓取，所以请求通过 charles 后可以进行请求数据分析抓取。
-5. 权限控制，通过代理服务器，可以设置部分网站无法访问，比如部分公司禁止访问淘宝等网站。
+数据请求有可能经过代理服务器，才进入server。代理服务器相当于中介，既是 client 又是 server。  
+代理服务器的作用：   
+1. 翻墙，越过国内防火墙，访问一些被屏蔽的网站，主要原因是国内防火墙没有屏蔽这个代理服务器，而这个代理服务器又可以访问被屏蔽的网站。  
+2. 缓存，对部分数据可以进行缓存，减少 server 负担，提升访问速度。  
+3. 匿名访问，代理服务器可以代发请求而不保存原始发送点数据，较难查到请求方。  
+4. 进行数据分析，比如使用 Charles 进行请求数据抓取，所以请求通过 charles 后可以进行请求数据分析抓取。  
+5. 权限控制，通过代理服务器，可以设置部分网站无法访问，比如部分公司禁止访问淘宝等网站。  
 
 ###（二）http 消息结构
 ####（1）request 消息
 浏览器访问http://blog.csdn.net/wangpeifeng669/article/details/38957761
 ![Alt text](https://github.com/wangpeifeng669/DevelopStudy/blob/master/Basic/pic/request%E6%B6%88%E6%81%AF%E7%BB%93%E6%9E%84.png) 
 ![Alt text](https://github.com/wangpeifeng669/DevelopStudy/blob/master/Basic/pic/request%E6%B6%88%E6%81%AF%E5%B1%95%E7%A4%BA.png)  
-1. 请求行  
+**1. 请求行**  
 Method：请求方法，如Get、Post 等  
 path-to-resource：请求资源位置，如/wangpeifeng669/article/details/38957761  
 version-number：http 协议版本号，通常是1.1  
-2. 消息报头  
+  
+**2. 消息报头**  
 **cache 部分**  
 If-Modified-Since：上次数据修改时间，和response 中的Last-Modified一起工作，在HTTP Response中获取到Last-Modified信息缓存下来， 当用户再次请求该资源时，将在HTTP Request中加入If-Modified-Since信息(Last-Modified的值)，如果服务器验证资源的Last-Modified没有改变（该资源没有更新），将返回一个304状态告诉客户端使用本地缓存文件。否则将返回200状态和新的资源和Last-Modified  
 If-None-Match：一串字符串验证令牌标识数据是否修改，server在数据修改后重新生成，和response 中的ETag一起工作， 工作原理同If-Modified-Since  
