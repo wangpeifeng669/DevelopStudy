@@ -26,7 +26,7 @@ selector {property: value}，如h1 {color:red; font-size:14px;}
 ####（1）概念
 Javascript是一种动态类型、弱类型的解释型脚本语言，主要用来向HTML（标准通用标记语言下的一个应用）页面添加交互行为。
 ####（2）组成部分
-![Alt text](https://github.com/wangpeifeng669/DevelopStudy/blob/master/H5/js%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86.png)  
+![Alt text](https://github.com/wangpeifeng669/DevelopStudy/blob/master/H5/pic/js%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86.png)  
 ECMAScript，描述了该语言的语法和基本对象。
 文档对象模型（DOM），描述处理网页内容的方法和接口。
 浏览器对象模型（BOM），描述与浏览器进行交互的方法和接口。
@@ -50,5 +50,5 @@ JavaScript 高级程序设计（特别是对浏览器差异的复杂处理），
 1. 网络请求 html 数据
 2. 渲染引擎解析 html 及 css
 获取到 html 数据解析成 DOM 树，解析过程中碰到 css 引用及图片等数据，同时下载其他数据，进行多次渲染生成网页。
-3. js 解释器解释执行 js 代码
+3. js解释器解释执行js代码
 4. 进行必要的数据存储
