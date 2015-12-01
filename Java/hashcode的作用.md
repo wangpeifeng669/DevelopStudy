@@ -5,6 +5,8 @@ hashcode 的作用
 在 Hashtable、HashSet、hashMap中使用hashcode做对象是否相等的匹配，查看[Hashtable 源码分析](http://www.cnblogs.com/skywang12345/p/3310887.html)，其数据结构是数组和链表结合的拉链法哈希表，通过hashcode 计算出对象存放的位置，若位置已有其他对象，则调用 equal 方法匹配是否相同，相同忽略插入，不同则建立链表顺序插入。如果没有这种机制，每次插入对象都必须匹配全部对象，效率极低。
 ps：Set集合 (不允许放重复值)是基于Hashmap 实现。
 
+![](https://github.com/wangpeifeng669/DevelopStudy/blob/master/Java/pic/hashcode%E7%9A%84%E4%BD%9C%E7%94%A8_pic.png?raw=true)
+
 在使用过程中需要遵循规则：
 1、如果两个对象相同（equal），那么它们的hashCode值一定要相同；
 2、如果两个对象的hashCode相同，它们并不一定相同。
