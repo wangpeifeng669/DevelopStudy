@@ -14,9 +14,10 @@ URL 必须是绝对地址，URI 可以是相对地址，如../icons/logo.gif
 3. 对于get方式，服务器端用Request.QueryString获取变量的值，对于post方式，服务器端用Request.Form获取提交的数据。
 4. get传送的数据量较小，不能大于2KB。post传送的数据量较大，一般被默认为不受限制。但理论上，IIS4中最大量为80KB，IIS5中为100KB。
 5. get安全性非常低，post安全性较高。但是执行效率却比Post方法好。
-6. get请求参数直接放在url中作为QueryString，post请求参数是放在http body中。
-建议：
-1. get方式的安全性较Post方式要差些，包含机密信息的话，建议用Post数据提交方式；
+6. get请求参数直接放在url中作为QueryString，post请求参数是放在http body中。  
+
+建议：  
+1. get方式的安全性较Post方式要差些，包含机密信息的话，建议用Post数据提交方式；  
 2. 在做数据查询时，建议用Get方式；而在做数据添加、修改或删除时，建议用Post方式；  
 更详细内容可以参考[这篇文章](http://www.diffen.com/difference/GET_(HTTP)_vs_POST_(HTTP))。
 
