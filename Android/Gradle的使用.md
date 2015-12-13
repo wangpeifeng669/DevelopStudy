@@ -17,7 +17,7 @@ gradle通过测试文件夹自动生成测试的 apk，方便测试
 
 ###（三）简单使用
 新建项目后，导入图片加载lib库image_library 如下
-
+![image](https://github.com/wangpeifeng669/DevelopStudy/blob/master/Android/pic/Gradle%E7%9A%84%E4%BD%BF%E7%94%A8.png?raw=true)
 
 项目结构  
 
