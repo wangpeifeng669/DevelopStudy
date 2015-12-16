@@ -6,7 +6,7 @@ String深入
 **常量池**：在堆中分配出来，专门存储不变量如String、float或者Integer。
 ###（二）String编码
 java文件可以是任何编码保存，但是编译后都是unicode格式的class文件，在操作IO如文件、数据库、网络数据时，都需要进行编码转换。
-
+![image](https://github.com/wangpeifeng669/DevelopStudy/blob/master/Java/pic/String%E6%B7%B1%E5%85%A5_%E7%BC%96%E7%A0%81.png?raw=true)
 ###（三）String案例分析
 ####（1）案例1
 	/**
