@@ -1,4 +1,4 @@
-String深入
+string深入
 ===
 ###（一）基本概念理解
 **堆**：存储对象等数据的区域。  
@@ -34,7 +34,7 @@ java文件可以是任何编码保存，但是编译后都是unicode格式的cla
 		 String s2 = new String("abc");
 		 System.out.println(s1==s2);
 	}
-用jad反编译字节码查看，jad具体用法见先前的文章。
+用jad反编译字节码查看，jad具体用法见[先前的文章](https://github.com/wangpeifeng669/DevelopStudy/blob/master/Java/%E5%8F%8D%E7%BC%96%E8%AF%91java%E5%AD%97%E8%8A%82%E7%A0%81.md)。
 
     private static void test2()
     {
