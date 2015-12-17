@@ -3,6 +3,7 @@ java-集合类（一）
 ##概念理解
 ###（一）集合类
 集合类用来存放动态变化的数据集合，因数组只能存储固定数量的数据集，集合类更灵活。
+![image](https://github.com/wangpeifeng669/DevelopStudy/blob/master/Java/pic/java-%E9%9B%86%E5%90%88%E7%B1%BB%EF%BC%88%E4%B8%80%EF%BC%89.png?raw=true)
 ###（二）各集合类简介
 ####（1）接口 
 Iterable：实现集合遍历功能，每个集合类都实现，支持 foreach   
