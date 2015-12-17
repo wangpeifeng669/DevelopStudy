@@ -1,0 +1,31 @@
+java-集合类（一）
+===
+##概念理解
+###（一）集合类
+集合类用来存放动态变化的数据集合，因数组只能存储固定数量的数据集，集合类更灵活。
+###（二）各集合类简介
+####（1）接口 
+Iterable：实现集合遍历功能，每个集合类都实现，支持 foreach   
+Collection：基本集合接口，支持增删查功能，包含 List、Set、Queue 接口。   
+List：可重复的数据集合，有索引方便增删改查。   
+Set：不可重复的数据集合。   
+Queue：双向链表，支持头尾操作。
+####（2）List 实现类 
+ArrayList：最常见的列表集合，基于数组实现，数组能够动态增长自动扩容。   
+LinkList：基于链表实现，遍历和插入删除特定位的操作效率较高。   
+Vector：JDK1.2的 api，已不建议使用，支持线程安全，非线程安全可以用 ArrayList 代替。   
+Stack：继承 Vector 实现后进先出的堆栈功能。  
+####（3）Set 实现类 
+HashSet：基于 hashmap 实现，hashmap 的key 值保存Set，实现不可重复性。   
+LinkHashSet：基于 LinkedHashSet 实现，链表型 HashSet。   
+TreeSet：有排序功能的 Set，内部使用 TreeMap。   
+EnumSet：枚举类型的Set集合。
+####（4）Queue 实现类 
+PriorityQueue：排序 Queue，可以添加Comparable参数或者让元素实现Comparable接口，实现自动排序功能。
+####（5）Map 实现类 
+HashMap：数组链表结构，根据 hash 查找对应存放数组位，相同数组位按链表结构存放，key-value 形式存放数据，key 不能相同，相同条件是key 的 equal 和 hashcode 都相同。   
+TreeMap：对key排序的Map，内部是红黑树结构，避免最坏搜索结果。  
+WeakHashMap：key 用WeakReference形式存放，不强引用 key，优化内存。   
+HashTable：旧 api，较少使用，线程安全的Map，子类有 Properties属性文件操作类。
+####（6）Collections、Arrays类 
+集合类的一个工具类，提供了一系列静态方法，用于对集合中元素进行排序、搜索以及线程安全等各种操作。
