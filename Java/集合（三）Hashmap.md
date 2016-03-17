@@ -170,3 +170,4 @@ s[0]*31^(n-1) + s[1]*31^(n-2) + ... + s[n-1]
    int hash = Collections.secondaryHash(key);  
    不直接使用 key 的 hashcode，而是 hashcode 后再进行分散处理，防止元素过于集中。
 4. 使用modCount表示每次数据改动，防止在调用HashIterator遍历元素的时候多线程操作又改动了数据。
+5. put 的时候是判断对象的 hash和 equal 都相等，就会替换掉旧的 value 值，所以对象放入必须留意 hash 和 equal。
