@@ -21,7 +21,7 @@
 		public TreeSet() {
 		    backingMap = new TreeMap<E, Object>();
 		}   
-2. TreeMap中存放对象只需实现Comparator，即具有排序功能，存放时会自动排序。
+2. TreeMap中存放对象只需实现Comparator，即具有排序功能，存放时会自动排序。  
 
 ###（三）HashMap和HashSet的区别
 详见[这篇文章](http://www.importnew.com/6931.html)。
