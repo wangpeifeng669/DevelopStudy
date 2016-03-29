@@ -67,7 +67,3 @@ str是指针，"Hello"和"Help!"是两个 String 对象，指针可以改变，S
 	bbb 
 	bbb/bbb 
 	96321/96321
-###（四）String知识点
-1. String的"+"运算符被编译器重载，底层实现采用StringBuffer或StringBuilder。  
-2. String 在 java 中是采用 Unicode 格式即 UTF-16，具体可以查看官方文档 [Character](https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#unicode)。
-3. 对 String 进行操作如大小写转换、连接、截取都会产生新的 String 对象，垃圾回收频繁，用StringBuffer或StringBuilder进行操作能提升性能。StringBuilder较常用，StringBuffer在StringBuilder基础上增加了同步操作现场安全。
