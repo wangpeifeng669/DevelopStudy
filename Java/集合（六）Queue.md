@@ -22,3 +22,5 @@ BlockingQueue就是常见的生产者消费者模式，在线程池中用来存�
 | 插入方法   | add(e)|offer(e)|put(e)|offer(e,time,unit)
 | 移除方法   | remove()|poll()|take()|poll(time,unit)
 | 检查方法   | element()|peek()|不可用|不可用
+
+###（六）BlockingQueue类型
