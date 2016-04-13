@@ -94,3 +94,31 @@ list.each doubles
 //只有一个参数可以去除括号
 list.each(plus)
 
+#####（9）注意事项
+1.函数调用，括号可以去除
+
+	def day = StringBuilder.newInstance()
+	day.append "1"
+	day.append('1')
+	println day
+2.属性自动转换为 get 或 set 方法
+
+	// Using a getter method
+	println project.buildDir
+	println getProject().getBuildDir()
+	
+	// Using a setter method
+	project.buildDir = 'target'
+	getProject().setBuildDir('target')
+3.函数参数只有一个而且为闭包时括号可以去除
+
+	def age = [1,2,3]
+	age.each({
+		println it
+	})
+
+	def age = [1,2,3]
+	age.each{
+		println it
+	}
+这两种是等效的，在 gradle 中经常看到去除括号的闭包参数。
