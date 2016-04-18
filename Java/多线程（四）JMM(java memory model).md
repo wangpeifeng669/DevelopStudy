@@ -1,4 +1,4 @@
-多线程（四） JMM(java memory model)
+多线程（四）JMM(java memory model)
 ===
 ###（一）java内存区域概况
 jvm运行java程序时把所管理的内存分成几个部分：方法区、java栈、本地方法栈、java堆、pc程序计数器。  
