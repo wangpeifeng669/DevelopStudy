@@ -103,3 +103,10 @@ servlet 销毁前调用，只调用一次。
 	
 	}
 
+###（三） Listerner 监听
+监听器Listener是application,session,request三个对象创建、销毁或者往其中添加修改删除属性时自动执行代码的功能组件。spring 中经常需要设置。  
+定义方式：
+
+	<listener>
+	    <listener-class>com.listener.class</listener-class>
+	</listener>
